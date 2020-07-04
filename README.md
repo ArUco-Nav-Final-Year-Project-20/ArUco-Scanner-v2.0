@@ -1,5 +1,4 @@
-ArucoAndroidServer
-==================
+#ArUco-Scanner-v2.0
 
 ![screenshot](screenshot.jpg)
 
@@ -38,3 +37,5 @@ Response from server
   ]
 }
 ```
+
+**_This repository has been forked from [eziosoft/ArucoAndroidServer](https://github.com/eziosoft/ArucoAndroidServer.git)_**
