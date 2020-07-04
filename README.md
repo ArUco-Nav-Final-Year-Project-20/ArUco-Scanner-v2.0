@@ -1,4 +1,4 @@
-#ArUco-Scanner-v2.0
+# ArUco-Scanner-v2.0
 
 ![screenshot](screenshot.jpg)
 
