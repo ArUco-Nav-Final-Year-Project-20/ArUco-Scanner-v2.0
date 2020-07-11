@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
         setContentView(R.layout.activity_main);
 
         mOpenCvCameraView = findViewById(R.id.camera_view);
-        mOpenCvCameraView.setMaxFrameSize(800, 600);
+        mOpenCvCameraView.setMaxFrameSize(1280, 720);
         mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
         mOpenCvCameraView.setCvCameraViewListener(this);
 
@@ -148,9 +148,6 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
         Aruco.detectMarkers(gray, dictionary, allCorners, ids, detectorParameters, rejected);
 
         if (!ids.empty()) {
-//            cvtColor(frame, rgb, Imgproc.COLOR_BGRA2BGR);
-//            Aruco.drawDetectedMarkers(rgb, allCorners, ids);
-//            cvtColor(rgb, frame, Imgproc.COLOR_BGR2BGRA);
 
             for (int i = 0; i < ids.rows(); i++) {
                 Mat markerCorners = allCorners.get(i);
@@ -176,7 +173,6 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
                 for (InetAddress addr : addrs) {
                     if (!addr.isLoopbackAddress()) {
                         String sAddr = addr.getHostAddress();
-                        //boolean isIPv4 = InetAddressUtils.isIPv4Address(sAddr);
                         boolean isIPv4 = sAddr.indexOf(':') < 0;
 
                         if (useIPv4) {
