@@ -31,7 +31,7 @@ The server sits on port 5000. The character 'g' needs to be encoded with the req
           "y": 125
         },
         {
-          "x": 396,
+          "x": 395,
           "y": 129
         },
         {
